@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<artifacts size='1'>
+  <artifact classifier='osgi.bundle' id='it.baeyens.arduino.common' version='2.1.1.201312090738'>
+    <properties size='5'>
+      <property name='artifact.size' value='364921'/>
+      <property name='download.size' value='364921'/>
+      <property name='maven-groupId' value='it.baeyens.arduino'/>
+      <property name='maven-artifactId' value='it.baeyens.arduino.common'/>
+      <property name='maven-version' value='2.1.1-SNAPSHOT'/>
+    </properties>
+  </artifact>
+</artifacts>
