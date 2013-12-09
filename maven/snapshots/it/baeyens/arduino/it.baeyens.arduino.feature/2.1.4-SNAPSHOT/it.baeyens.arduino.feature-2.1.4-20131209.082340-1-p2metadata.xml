@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<units size='2'>
+  <unit id='it.baeyens.arduino.feature.feature.group' version='2.1.4.201312090823' singleton='false'>
+    <update id='it.baeyens.arduino.feature.feature.group' range='[0.0.0,2.1.4.201312090823)' severity='0'/>
+    <properties size='8'>
+      <property name='org.eclipse.equinox.p2.name' value='Arduino eclipse extensions'/>
+      <property name='org.eclipse.equinox.p2.description' value='This feature allows easy creation of Arduino projects in an Eclipse&#xA;environment.&#xA;The main features are&#xA;a new arduino sketch wizard&#xA;a import library wizard&#xA;a button to build the project&#xA;a button to upload to the arduino board&#xA;a project property page allowing to change the arduino board&#xA;type and the port the arduino is using.&#xA;Version 2_1_4&#xA;Support for multiple configurations&#xA;Support for aternative soze command&#xA;Support for extentions to the C C++ compile instructions&#xA;Implementation of the eep compiler&#xA;Added flag to platform.txt to skip the archiver&#xA;New Arduino Icons&#xA;Support for Teensy 3&#xA;Hard coded Teensy uploaded comands are now using Platform.txt&#xA;Longer wait times for upload&#xA;Fix for due compilation&#xA;Version 2_0_0&#xA;New version for Arduino IDE 1.5.2 compatibility and without avr-eclipse&#xA;This version runs with Juno Only&#xA;Arduino project and sketch are in one eclipse project&#xA;Fixed problems with the indexer&#xA;Support for multiple boards.txt files added&#xA;Support for teensy added&#xA;Version 1_2_5&#xA;Cleaned up so that leonardo_test is not in the include path&#xA;Sorted the list of Arduino Boards&#xA;Version 1_2_4&#xA;Added Leonardo support&#xA;Undid the &quot;Fixed a bug on MAC when AVRPaths searches..)&#xA;Disabled searching for paths (other fix for the above undo)&#xA;Note 1_2_3 is not configurable on MAC.&#xA;Version 1_2_3&#xA;Added a serial test button to test the serial library in the&#xA;preference page&#xA;Fixed a bug to support non arduino cores (the correct include&#xA;folder is&#xA;now set)&#xA;Fixed a bug on MAC when AVRPaths searches for the location of&#xA;G++ AvrDude and others. (no MAC search as been added but the&#xA;POSIX is no longer used in case of mac)&#xA;Added suport for specific c compile, c++ compile and link instructions&#xA;the keys to be added to the boards.txt are&#xA;[board id].build.cpp.options&#xA;[board id].build.c.options&#xA;[board id].build.link.options&#xA;fixed the bug that when the &quot;private library&quot; is not selected&#xA;the eclipse environment is not setup properly. If not set a error&#xA;will pop up. it should not be possible to exit the preferences&#xA;without setting it.&#xA;Version 1_2_2&#xA;Added multiple library import&#xA;Added support for other cores than the Arduino (boards.txs file&#xA;attrribute XX.build.core)&#xA;Added serial monitor&#xA;version 1_2_1&#xA;Changed the lib for MAC os to a 4 architecture lib.&#xA;version 1_2_0&#xA;Added Com functionality.&#xA;Available Com ports are listed where you can select a com port&#xA;Now all arduino boards are reset when doing an upload.&#xA;adde , to the list of non allowed characters&#xA;version 1_1_6&#xA;Some board names contain ( and ) which gives problems when creating&#xA;the arduino project names.&#xA;This has been fixed now.&#xA;When importing a library the selected project is used as the&#xA;default project.&#xA;Error handling during import pops up now&#xA;Version 1_1_5&#xA;Mac os is supported now. This means the errors have been removed&#xA;and the default values should be ok.&#xA;Version 1_1_3&#xA;Fixes a bug that the latest used com port is used to uload a&#xA;file to arduino. Now the correct set port is used.&#xA;version 1_1_2&#xA;The ARDUINO define is now built based on the version.txt file.&#xA;The in eclipse define has been removed.&#xA;version 1_1_1 &#xA;includes better error reporting (now errors are also shown in&#xA;a dialog box and not only logged in the error log.&#xA;Bixes a bug when that made the referenced project corrupt when&#xA;changing the arduino board.&#xA;version 1_1_0 is a major change.&#xA;It fixed the incompatibilities with arduino 1.0&#xA;Therfore the arduino core library is replaced by arduino board&#xA;library (ths was needed due to the pins_arduino&#xA;I ow use the programmer as described in boards.txt&#xA;version 1_0_9 fixed unix incompatibilities&#xA;version 1_0_8 fixed the ok button not enabled in preference page&#xA;version 1_0_7 changed licence agreement and fixes issues &#xA;import of arduino library subforder &quot;utilities&quot;&#xA;the c perspective is now proposed when a new project is created.&#xA;version 1_0_6 add import library functionality&#xA;previous versions are no longer available&#xA;This is a plugin build upon the avr-eclise plugin.&#xA;I included the avr-eclipse source code in this feature because&#xA;I had to make some changes and didn&apos;t want to wait for the next&#xA;version of the avr-eclipse plugin.&#xA;To avoid conflict I had to rename de .innot to it.baeyens. I&#xA;kept the same ID to keep the plugins data compatible.&#xA;Jan'/>
+      <property name='org.eclipse.equinox.p2.description.url' value='http://www.example.com/description'/>
+      <property name='org.eclipse.equinox.p2.provider' value='jan Baeyens'/>
+      <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+      <property name='maven-groupId' value='it.baeyens.arduino'/>
+      <property name='maven-artifactId' value='it.baeyens.arduino.feature'/>
+      <property name='maven-version' value='2.1.4-SNAPSHOT'/>
+    </properties>
+    <provides size='1'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='it.baeyens.arduino.feature.feature.group' version='2.1.4.201312090823'/>
+    </provides>
+    <requires size='15'>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui' range='3.7.0'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.runtime' range='3.7.0'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.cdt.core' range='5.3.0'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.resources' range='3.7.100'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui.ide' range='3.7.0'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui.navigator' range='0.0.0'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.cdt.managedbuilder.core' range='8.0.0'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.filesystem' range='1.3.100'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui.console' range='0.0.0'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='it.baeyens.arduino.common' range='[2.1.1.201312090823,2.1.1.201312090823]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='it.baeyens.arduino.core' range='[2.1.4.201312090823,2.1.4.201312090823]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='it.baeyens.arduino.monitor' range='[2.1.8.201312090823,2.1.8.201312090823]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='it.baeyens.arduino.core.nl1' range='[1.0.0.201312090823,1.0.0.201312090823]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='it.baeyens.arduino.application' range='[1.0.0.201312090823,1.0.0.201312090823]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='it.baeyens.arduino.feature.feature.jar' range='[2.1.4.201312090823,2.1.4.201312090823]'>
+        <filter>
+          (org.eclipse.update.install.features=true)
+        </filter>
+      </required>
+    </requires>
+    <touchpoint id='null' version='0.0.0'/>
+    <licenses size='1'>
+      <license uri='http://www.eclipse.org/org/documents/epl-v10.html' url='http://www.eclipse.org/org/documents/epl-v10.html'>
+        This software is licensed under GPL Version 3.0&#xA;This software sends non personalised data at regular intervals to a server for statistical analyses of the usage of the plugin.&#xA;If you do not agree with this policy, then please do not install this software.
+      </license>
+    </licenses>
+    <copyright>
+      All rights reserved by the owning parties.&#xA;Arduino-&gt;       Copyright (c) 2011 Jan Baeyens&#xA;Remaining code of AVR-eclipse&#xA;AVR-eclipse-&gt;  Copyright (c) 2008, 2010 Thomas Holland (thomas@innot.de)&#xA;Boards code&#xA;Trump211
+    </copyright>
+  </unit>
+  <unit id='it.baeyens.arduino.feature.feature.jar' version='2.1.4.201312090823'>
+    <properties size='7'>
+      <property name='org.eclipse.equinox.p2.name' value='Arduino eclipse extensions'/>
+      <property name='org.eclipse.equinox.p2.description' value='This feature allows easy creation of Arduino projects in an Eclipse&#xA;environment.&#xA;The main features are&#xA;a new arduino sketch wizard&#xA;a import library wizard&#xA;a button to build the project&#xA;a button to upload to the arduino board&#xA;a project property page allowing to change the arduino board&#xA;type and the port the arduino is using.&#xA;Version 2_1_4&#xA;Support for multiple configurations&#xA;Support for aternative soze command&#xA;Support for extentions to the C C++ compile instructions&#xA;Implementation of the eep compiler&#xA;Added flag to platform.txt to skip the archiver&#xA;New Arduino Icons&#xA;Support for Teensy 3&#xA;Hard coded Teensy uploaded comands are now using Platform.txt&#xA;Longer wait times for upload&#xA;Fix for due compilation&#xA;Version 2_0_0&#xA;New version for Arduino IDE 1.5.2 compatibility and without avr-eclipse&#xA;This version runs with Juno Only&#xA;Arduino project and sketch are in one eclipse project&#xA;Fixed problems with the indexer&#xA;Support for multiple boards.txt files added&#xA;Support for teensy added&#xA;Version 1_2_5&#xA;Cleaned up so that leonardo_test is not in the include path&#xA;Sorted the list of Arduino Boards&#xA;Version 1_2_4&#xA;Added Leonardo support&#xA;Undid the &quot;Fixed a bug on MAC when AVRPaths searches..)&#xA;Disabled searching for paths (other fix for the above undo)&#xA;Note 1_2_3 is not configurable on MAC.&#xA;Version 1_2_3&#xA;Added a serial test button to test the serial library in the&#xA;preference page&#xA;Fixed a bug to support non arduino cores (the correct include&#xA;folder is&#xA;now set)&#xA;Fixed a bug on MAC when AVRPaths searches for the location of&#xA;G++ AvrDude and others. (no MAC search as been added but the&#xA;POSIX is no longer used in case of mac)&#xA;Added suport for specific c compile, c++ compile and link instructions&#xA;the keys to be added to the boards.txt are&#xA;[board id].build.cpp.options&#xA;[board id].build.c.options&#xA;[board id].build.link.options&#xA;fixed the bug that when the &quot;private library&quot; is not selected&#xA;the eclipse environment is not setup properly. If not set a error&#xA;will pop up. it should not be possible to exit the preferences&#xA;without setting it.&#xA;Version 1_2_2&#xA;Added multiple library import&#xA;Added support for other cores than the Arduino (boards.txs file&#xA;attrribute XX.build.core)&#xA;Added serial monitor&#xA;version 1_2_1&#xA;Changed the lib for MAC os to a 4 architecture lib.&#xA;version 1_2_0&#xA;Added Com functionality.&#xA;Available Com ports are listed where you can select a com port&#xA;Now all arduino boards are reset when doing an upload.&#xA;adde , to the list of non allowed characters&#xA;version 1_1_6&#xA;Some board names contain ( and ) which gives problems when creating&#xA;the arduino project names.&#xA;This has been fixed now.&#xA;When importing a library the selected project is used as the&#xA;default project.&#xA;Error handling during import pops up now&#xA;Version 1_1_5&#xA;Mac os is supported now. This means the errors have been removed&#xA;and the default values should be ok.&#xA;Version 1_1_3&#xA;Fixes a bug that the latest used com port is used to uload a&#xA;file to arduino. Now the correct set port is used.&#xA;version 1_1_2&#xA;The ARDUINO define is now built based on the version.txt file.&#xA;The in eclipse define has been removed.&#xA;version 1_1_1 &#xA;includes better error reporting (now errors are also shown in&#xA;a dialog box and not only logged in the error log.&#xA;Bixes a bug when that made the referenced project corrupt when&#xA;changing the arduino board.&#xA;version 1_1_0 is a major change.&#xA;It fixed the incompatibilities with arduino 1.0&#xA;Therfore the arduino core library is replaced by arduino board&#xA;library (ths was needed due to the pins_arduino&#xA;I ow use the programmer as described in boards.txt&#xA;version 1_0_9 fixed unix incompatibilities&#xA;version 1_0_8 fixed the ok button not enabled in preference page&#xA;version 1_0_7 changed licence agreement and fixes issues &#xA;import of arduino library subforder &quot;utilities&quot;&#xA;the c perspective is now proposed when a new project is created.&#xA;version 1_0_6 add import library functionality&#xA;previous versions are no longer available&#xA;This is a plugin build upon the avr-eclise plugin.&#xA;I included the avr-eclipse source code in this feature because&#xA;I had to make some changes and didn&apos;t want to wait for the next&#xA;version of the avr-eclipse plugin.&#xA;To avoid conflict I had to rename de .innot to it.baeyens. I&#xA;kept the same ID to keep the plugins data compatible.&#xA;Jan'/>
+      <property name='org.eclipse.equinox.p2.description.url' value='http://www.example.com/description'/>
+      <property name='org.eclipse.equinox.p2.provider' value='jan Baeyens'/>
+      <property name='maven-groupId' value='it.baeyens.arduino'/>
+      <property name='maven-artifactId' value='it.baeyens.arduino.feature'/>
+      <property name='maven-version' value='2.1.4-SNAPSHOT'/>
+    </properties>
+    <provides size='3'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='it.baeyens.arduino.feature.feature.jar' version='2.1.4.201312090823'/>
+      <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+      <provided namespace='org.eclipse.update.feature' name='it.baeyens.arduino.feature' version='2.1.4.201312090823'/>
+    </provides>
+    <filter>
+      (org.eclipse.update.install.features=true)
+    </filter>
+    <artifacts size='1'>
+      <artifact classifier='org.eclipse.update.feature' id='it.baeyens.arduino.feature' version='2.1.4.201312090823'/>
+    </artifacts>
+    <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+    <touchpointData size='1'>
+      <instructions size='1'>
+        <instruction key='zipped'>
+          true
+        </instruction>
+      </instructions>
+    </touchpointData>
+    <licenses size='1'>
+      <license uri='http://www.eclipse.org/org/documents/epl-v10.html' url='http://www.eclipse.org/org/documents/epl-v10.html'>
+        This software is licensed under GPL Version 3.0&#xA;This software sends non personalised data at regular intervals to a server for statistical analyses of the usage of the plugin.&#xA;If you do not agree with this policy, then please do not install this software.
+      </license>
+    </licenses>
+    <copyright>
+      All rights reserved by the owning parties.&#xA;Arduino-&gt;       Copyright (c) 2011 Jan Baeyens&#xA;Remaining code of AVR-eclipse&#xA;AVR-eclipse-&gt;  Copyright (c) 2008, 2010 Thomas Holland (thomas@innot.de)&#xA;Boards code&#xA;Trump211
+    </copyright>
+  </unit>
+</units>
