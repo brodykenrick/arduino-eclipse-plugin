@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<units size='1'>
+  <unit id='it.baeyens.arduino.core' version='2.1.4.201312090738'>
+    <update id='it.baeyens.arduino.core' range='[0.0.0,2.1.4.201312090738)' severity='0'/>
+    <properties size='5'>
+      <property name='org.eclipse.equinox.p2.name' value='Arduino eclipse plugin'/>
+      <property name='org.eclipse.equinox.p2.provider' value='Jan Baeyens'/>
+      <property name='maven-groupId' value='it.baeyens.arduino'/>
+      <property name='maven-artifactId' value='it.baeyens.arduino.core'/>
+      <property name='maven-version' value='2.1.4-SNAPSHOT'/>
+    </properties>
+    <provides size='5'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='it.baeyens.arduino.core' version='2.1.4.201312090738'/>
+      <provided namespace='osgi.bundle' name='it.baeyens.arduino.core' version='2.1.4.201312090738'/>
+      <provided namespace='java.package' name='it.baeyens.arduino.tools' version='0.0.0'/>
+      <provided namespace='java.package' name='it.baeyens.arduino.ui' version='0.0.0'/>
+      <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+    </provides>
+    <requires size='20'>
+      <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.cdt.managedbuilder.core' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.core.filesystem' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.ui.ide' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.cdt.core' range='0.0.0'/>
+      <required namespace='java.package' name='it.baeyens.arduino.arduino' range='0.0.0'/>
+      <required namespace='java.package' name='it.baeyens.arduino.common' range='0.0.0'/>
+      <required namespace='java.package' name='org.eclipse.cdt.core' range='0.0.0'/>
+      <required namespace='java.package' name='org.eclipse.cdt.core.envvar' range='0.0.0'/>
+      <required namespace='java.package' name='org.eclipse.cdt.core.language.settings.providers' range='0.0.0'/>
+      <required namespace='java.package' name='org.eclipse.cdt.core.model' range='0.0.0'/>
+      <required namespace='java.package' name='org.eclipse.cdt.core.settings.model' range='0.0.0'/>
+      <required namespace='java.package' name='org.eclipse.cdt.core.settings.model.extension' range='0.0.0'/>
+      <required namespace='java.package' name='org.eclipse.cdt.core.settings.model.util' range='0.0.0'/>
+      <required namespace='java.package' name='org.eclipse.cdt.ui.newui' range='0.0.0'/>
+      <required namespace='java.package' name='org.eclipse.cdt.utils' range='0.0.0'/>
+      <required namespace='java.package' name='org.eclipse.ui.console' range='0.0.0'/>
+      <required namespace='java.package' name='org.eclipse.ui.dialogs' range='0.0.0'/>
+    </requires>
+    <artifacts size='1'>
+      <artifact classifier='osgi.bundle' id='it.baeyens.arduino.core' version='2.1.4.201312090738'/>
+    </artifacts>
+    <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+    <touchpointData size='1'>
+      <instructions size='1'>
+        <instruction key='manifest'>
+          Bundle-SymbolicName: it.baeyens.arduino.core;singleton:=true&#xA;Bundle-Version: 2.1.4.201312090738&#xA;
+        </instruction>
+      </instructions>
+    </touchpointData>
+  </unit>
+</units>
