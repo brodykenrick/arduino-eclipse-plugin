@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<units size='2'>
+  <unit id='it.baeyens.arduino.packaging.feature.feature.group' version='1.0.0.201312090751' singleton='false'>
+    <update id='it.baeyens.arduino.packaging.feature.feature.group' range='[0.0.0,1.0.0.201312090751)' severity='0'/>
+    <properties size='6'>
+      <property name='org.eclipse.equinox.p2.name' value='Arduino Eclipse Features'/>
+      <property name='org.eclipse.equinox.p2.description' value='An IDE for C/C++ developers with Arduino integration.'/>
+      <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+      <property name='maven-groupId' value='it.baeyens.arduino'/>
+      <property name='maven-artifactId' value='it.baeyens.arduino.packaging.feature'/>
+      <property name='maven-version' value='1.0.0-SNAPSHOT'/>
+    </properties>
+    <provides size='1'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='it.baeyens.arduino.packaging.feature.feature.group' version='1.0.0.201312090751'/>
+    </provides>
+    <requires size='23'>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.cvs.feature.group' range='[1.4.100.v20131030-2000,1.4.100.v20131030-2000]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.equinox.p2.user.ui.feature.group' range='[2.2.0.v20131027-1505,2.2.0.v20131027-1505]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.help.feature.group' range='[2.0.0.v20131030-2000,2.0.0.v20131030-2000]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.platform.feature.group' range='[4.4.0.v20131030-2000,4.4.0.v20131030-2000]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.rcp.feature.group' range='[4.4.0.v20131030-2000,4.4.0.v20131030-2000]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.cdt.feature.group' range='[8.3.0.201310011017,8.3.0.201310011017]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.cdt.debug.ui.memory.feature.group' range='[8.3.0.201310011017,8.3.0.201310011017]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.cdt.msw.feature.group' range='[8.3.0.201310011017,8.3.0.201310011017]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.cdt.build.crossgcc.feature.group' range='[8.3.0.201310011017,8.3.0.201310011017]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.cdt.launch.remote.feature.group' range='[8.3.0.201310011017,8.3.0.201310011017]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.cdt.autotools.feature.group' range='[8.3.0.201310011017,8.3.0.201310011017]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.cdt.mylyn.feature.group' range='[5.6.0.20131008-0520,5.6.0.20131008-0520]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.mylyn_feature.feature.group' range='[3.10.0.20131010-2023,3.10.0.20131010-2023]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.mylyn.context_feature.feature.group' range='[3.10.0.20131007-1529,3.10.0.20131007-1529]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.mylyn.team_feature.feature.group' range='[3.10.0.20130816-2152,3.10.0.20130816-2152]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.mylyn.ide_feature.feature.group' range='[3.10.0.20131008-0520,3.10.0.20131008-0520]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.mylyn.bugzilla_feature.feature.group' range='[3.10.0.20131024-1218,3.10.0.20131024-1218]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.mylyn.wikitext_feature.feature.group' range='[1.9.0.20131008-0518,1.9.0.20131008-0518]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.rse.feature.group' range='[3.5.0.201311090851,3.5.0.201311090851]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.egit.feature.group' range='[3.2.0.201311130903-m3,3.2.0.201311130903-m3]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.epp.package.common.feature.feature.group' range='[2.1.0.20131103-0830,2.1.0.20131103-0830]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.nebula.widgets.oscilloscope.feature.feature.group' range='[1.2.0.201312041736,1.2.0.201312041736]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='it.baeyens.arduino.packaging.feature.feature.jar' range='[1.0.0.201312090751,1.0.0.201312090751]'>
+        <filter>
+          (org.eclipse.update.install.features=true)
+        </filter>
+      </required>
+    </requires>
+    <touchpoint id='null' version='0.0.0'/>
+    <licenses size='1'>
+      <license uri='license.html' url='license.html'>
+        %license
+      </license>
+    </licenses>
+  </unit>
+  <unit id='it.baeyens.arduino.packaging.feature.feature.jar' version='1.0.0.201312090751'>
+    <properties size='5'>
+      <property name='org.eclipse.equinox.p2.name' value='Arduino Eclipse Features'/>
+      <property name='org.eclipse.equinox.p2.description' value='An IDE for C/C++ developers with Arduino integration.'/>
+      <property name='maven-groupId' value='it.baeyens.arduino'/>
+      <property name='maven-artifactId' value='it.baeyens.arduino.packaging.feature'/>
+      <property name='maven-version' value='1.0.0-SNAPSHOT'/>
+    </properties>
+    <provides size='3'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='it.baeyens.arduino.packaging.feature.feature.jar' version='1.0.0.201312090751'/>
+      <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+      <provided namespace='org.eclipse.update.feature' name='it.baeyens.arduino.packaging.feature' version='1.0.0.201312090751'/>
+    </provides>
+    <filter>
+      (org.eclipse.update.install.features=true)
+    </filter>
+    <artifacts size='1'>
+      <artifact classifier='org.eclipse.update.feature' id='it.baeyens.arduino.packaging.feature' version='1.0.0.201312090751'/>
+    </artifacts>
+    <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+    <touchpointData size='1'>
+      <instructions size='1'>
+        <instruction key='zipped'>
+          true
+        </instruction>
+      </instructions>
+    </touchpointData>
+    <licenses size='1'>
+      <license uri='license.html' url='license.html'>
+        %license
+      </license>
+    </licenses>
+  </unit>
+</units>
