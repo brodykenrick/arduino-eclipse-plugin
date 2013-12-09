@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<units size='1'>
+  <unit id='it.baeyens.arduino.monitor' version='2.1.8.201312090751'>
+    <update id='it.baeyens.arduino.monitor' range='[0.0.0,2.1.8.201312090751)' severity='0'/>
+    <properties size='5'>
+      <property name='org.eclipse.equinox.p2.name' value='Monitor'/>
+      <property name='org.eclipse.equinox.p2.provider' value='jan baeyens'/>
+      <property name='maven-groupId' value='it.baeyens.arduino'/>
+      <property name='maven-artifactId' value='it.baeyens.arduino.monitor'/>
+      <property name='maven-version' value='2.1.8-SNAPSHOT'/>
+    </properties>
+    <provides size='5'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='it.baeyens.arduino.monitor' version='2.1.8.201312090751'/>
+      <provided namespace='osgi.bundle' name='it.baeyens.arduino.monitor' version='2.1.8.201312090751'/>
+      <provided namespace='java.package' name='it.baeyens.arduino.monitor' version='0.0.0'/>
+      <provided namespace='java.package' name='it.baeyens.arduino.monitor.views' version='0.0.0'/>
+      <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+    </provides>
+    <requires size='3'>
+      <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='it.baeyens.arduino.common' range='0.0.0'/>
+    </requires>
+    <artifacts size='1'>
+      <artifact classifier='osgi.bundle' id='it.baeyens.arduino.monitor' version='2.1.8.201312090751'/>
+    </artifacts>
+    <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+    <touchpointData size='1'>
+      <instructions size='1'>
+        <instruction key='manifest'>
+          Bundle-SymbolicName: it.baeyens.arduino.monitor; singleton:=true&#xA;Bundle-Version: 2.1.8.201312090751&#xA;
+        </instruction>
+      </instructions>
+    </touchpointData>
+  </unit>
+</units>
